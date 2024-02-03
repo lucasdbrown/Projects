@@ -1,0 +1,39 @@
+REM payload that opens notepad and types 'Hello, World!'
+
+REM allocates time (1000 miliseconds) for computer to recognize ducky as a keyboard
+DELAY 1000
+
+REM opens runbox
+GUI r
+DELAY 100
+
+REM opens notepad
+STRING notepad
+ENTER
+
+REM types 'Hello, World' into notepad
+DELAY 100
+STRING Hello, World
+
+REM payload that opens TextEdit on macOS and writes 'Hello, World!'
+REM allocates time (1000 milliseconds) for computer to recognize ducky as a keyboard
+DELAY 1000
+
+REM opens spotlight on macOS
+STRING SPACE
+REM use COMMAND key for macOS
+STRING COMMAND
+ENTER
+
+REM opens TextEdit on macOS
+REM The delay and typing commands are arbitrary and may need adjustment
+REM based on your system's responsiveness
+DELAY 100
+STRING TextEdit
+ENTER
+
+REM types 'Hello, World' into TextEdit
+REM The delay and typing commands are arbitrary and may need adjustment
+REM based on your system's responsiveness
+DELAY 200
+STRING Hello, World!
